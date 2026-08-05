@@ -1,6 +1,6 @@
-import native.server
+import native.flamer
 
-let app = server.init()
+let app = flamer.init()
 
 fn main () -> String{
     "hello"
