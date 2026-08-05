@@ -1,0 +1,12 @@
+import native.server
+
+let app = server.init()
+
+fn main () -> String{
+    "hello"
+}
+
+app.get("/", main)
+
+print("Server started!")
+app.listen(3000)

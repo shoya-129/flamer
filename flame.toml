@@ -1,0 +1,9 @@
+[package]
+name = "flame-try"
+version = "0.1.0"
+edition = "2026"
+type = "executable"
+
+
+[plugins]
+flamer = "./native"
