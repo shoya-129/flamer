@@ -1,10 +1,8 @@
 use axum::{
-    response::{IntoResponse, Json},
     routing::{get, post},
     Router,
 };
 use flame_macro::flame;
-use serde::Serialize;
 use std::{mem, net::SocketAddr};
 
 pub struct FlameServer {

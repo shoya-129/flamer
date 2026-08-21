@@ -10,7 +10,6 @@ crate-type = ["cdylib", "rlib"]
 tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "net", "sync"] }
 axum = "0.8.9"
 flame-macro = "0.1.0"
-serde="1.0"
 
 
 [profile.dev]

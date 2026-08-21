@@ -2,13 +2,32 @@ import native.flamer
 
 
 
+@Docs("#### Initialise a Flamer Server
+- Leverages Rust **tokio** and **axum**
+- Easy to use inside **Flame**
+
+**Uses:**
+
+```flame
+@Flamer(port: 3000)
+async fn main() {
+    flamer.get(
+        '/',
+        () {
+            'hello'
+        }
+    )
+    await flamer.listen()
+}
+await main()
+```
+")
 export annotation Flamer(port: Int) -> FlameServer {
     let s = flamer.init()
+
     s.set_port(port)
     return s
 }
-
-
 
 // tests
 // @Flamer(port: 3000)
@@ -19,8 +38,6 @@ export annotation Flamer(port: Int) -> FlameServer {
 //             "hello"
 //         }
 //     )
-
 //     await flamer.listen()
 // }
-
 // await main()
