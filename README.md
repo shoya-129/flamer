@@ -20,7 +20,8 @@ Terminal window
 Alternatively, manually add it to your flame.toml:
 
 ```toml
-[dependencies] flamer = "https://github.com/shoya-129/flamer"
+[dependencies]
+flamer = "https://github.com/shoya-129/flamer"
 ```
 
 ---
