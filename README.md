@@ -14,7 +14,7 @@
 Terminal window
 
 ```shell
- flame add https://github.com/shoya-129/flamer
+ fmp add https://github.com/shoya-129/flamer
 ```
 
 Alternatively, manually add it to your flame.toml:
